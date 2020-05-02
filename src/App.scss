@@ -1,0 +1,50 @@
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  header {
+    margin-bottom: 2rem;
+  }
+  .uploader {
+    .uploader-form {
+      margin-top: 1rem;
+      .uploader-button {
+        width: 40vw;
+        color: #797f8c;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 2px dashed #797f8c;
+        border-radius: 8px;
+        cursor: pointer;
+        text-align: center;
+        position: relative;
+        transition: all 0.5s ease;
+        p {
+          position: absolute;
+          bottom: 0;
+        }
+        i {
+          color: #797f8c;
+          font-size: 4rem;
+          margin: 5rem;
+          transition: color 0.3s ease;
+        }
+        input {
+          display: none;
+        }
+        &:hover {
+          color: #443a9e;
+          border-color: #584fec;
+          background-color: #f0f5ff;
+          i {
+            color: #584fec;
+          }
+        }
+      }
+    }
+  }
+}
