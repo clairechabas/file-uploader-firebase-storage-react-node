@@ -2,16 +2,25 @@
   <img src="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-built_black.svg" width="135" height="60" />
 </a>
 
-# File uploader built with React.js and a Node.js API and using Firebase Cloud Storage as the storage provider.
+# File Uploader With Firebase Cloud Storage, ReactJS, NodeJS
+
+### Full Step-By-Step Guide: [Read the Medium post](https://medium.com/post-url)
 
 ![File Uploader ReactJS + NodeJS + Firebase](/public/file-uploader-react-node-firebase-screenshot.png)
 
 ## Pre-requisites
 
-This repo is related to [this how-to Medium post](https://medium.com/post-url). In order for it to work, as described in the article, you need to do the following:
+To use this file uploader you need the following:
 
-1. Set up a Firebase account, activate Cloud Storage, and generate a private key, which will give you a JSON file to store somewhere safe so you can reference to it.
-2. Add a .env file to the /api folder with 3 environment variables inside for: 1) the path to your private key json file, 2) your Google Cloud project ID and 3) your Google Cloud storage bucket URL :
+1. Set up a Firebase account > activate Cloud Storage > generate a private key, which will give you a JSON file to store somewhere safe so you can reference to it.
+
+2. Add a `.env` file to the `/api` folder with 3 environment variables inside for:
+
+- The path to your private key JSON file
+- Your Firebase project ID
+- Your Firebase Cloud Storage bucket URL
+
+Names for these variables used in the repo are the followings:
 
 ```
 GCLOUD_APPLICATION_CREDENTIALS=
