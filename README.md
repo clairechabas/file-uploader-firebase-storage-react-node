@@ -1,4 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<a href="https://firebase.google.com/">
+  <img src="https://firebase.google.com/downloads/brand-guidelines/SVG/logo-built_black.svg" width="135" height="60" />
+</a>
+
+# File uploader built with React.js and a Node.js API and using Firebase Cloud Storage as the storage provider.
+
+![File Uploader ReactJS + NodeJS + Firebase](/public/file-uploader-react-node-firebase-screenshot.png)
+
+## Pre-requisites
+
+This repo is related to [this how-to Medium post](https://medium.com/post-url). In order for it to work, as described in the article, you need to do the following:
+
+1. Set up a Firebase account, activate Cloud Storage, and generate a private key, which will give you a JSON file to store somewhere safe so you can reference to it.
+2. Add a .env file to the /api folder with 3 environment variables inside for: 1) the path to your private key json file, 2) your Google Cloud project ID and 3) your Google Cloud storage bucket URL :
+
+```
+GCLOUD_APPLICATION_CREDENTIALS=
+GCLOUD_PROJECT_ID=
+GCLOUD_STORAGE_BUCKET_URL=
+```
+
+3. Run `yarn start`
 
 ## Available Scripts
 
@@ -6,7 +27,7 @@ In the project directory, you can run:
 
 ### `yarn start`
 
-Runs the app in the development mode.<br />
+Runs the app in the development mode on port 3000 as well as the API on port 8080 if you don't specify a different port as env variable in the start script.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
@@ -36,33 +57,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
