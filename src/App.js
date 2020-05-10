@@ -74,6 +74,11 @@ const App = () => {
       setIsLoading(false);
       setIsError(true);
       setFileName(null);
+
+      setTimeout(() => {
+        setIsError(false);
+        setButtonText('Select your file first');
+      }, 3000);
     }
   };
 
