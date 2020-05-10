@@ -1,0 +1,12 @@
+.success,
+.error {
+  font-weight: bold;
+}
+
+[class*='error'] {
+  color: red !important;
+}
+
+[class*='success'] {
+  color: green !important;
+}

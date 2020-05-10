@@ -1,0 +1,62 @@
+.uploader {
+  width: 40vw;
+  color: #797f8c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #797f8c;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  transition: all 0.5s ease;
+
+  &:hover {
+    color: #443a9e;
+    border-color: #584fec;
+    background-color: #f0f5ff;
+
+    i[class^='icon'] {
+      color: #584fec;
+    }
+  }
+
+  .upload-space {
+    padding: 5rem;
+    padding-bottom: 3rem;
+    width: 100%;
+    height: 10vh;
+    position: relative;
+
+    input[type='file'] {
+      display: none;
+    }
+
+    i {
+      color: #797f8c;
+      font-size: 4rem;
+      transition: color 0.3s ease;
+    }
+
+    .preview {
+      position: absolute;
+      width: 6rem;
+      height: 6rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+      }
+    }
+
+    .filename {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

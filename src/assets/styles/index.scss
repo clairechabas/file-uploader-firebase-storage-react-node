@@ -1,0 +1,59 @@
+/*
+ FONT & ICONFONT
+*/
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@font-face {
+  font-family: 'Icons';
+  src: url('../fonts/icons.eot?kq4gmy');
+  src: url('../fonts/icons.eot?kq4gmy#iefix') format('embedded-opentype'),
+    url('../fonts/icons.ttf?kq4gmy') format('truetype'),
+    url('../fonts/icons.woff?kq4gmy') format('woff'),
+    url('../fonts/icons.svg?kq4gmy#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^='icon-'],
+[class*=' icon-'] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-error:before {
+  content: '\e902';
+}
+.icon-success:before {
+  content: '\e900';
+}
+.icon-upload:before {
+  content: '\e901';
+}
+
+/* RESETS & GLOBALS */
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  font-family: 'Lato', 'Segoe UI', 'Roboto', 'Oxygen', 'Helvetica Neue', serif;
+}
+
+/* Components Styles */
+@import './App.scss';
+@import './Button.scss';
+@import './Spinner.scss';
+@import './Status.scss';
+@import './Uploader.scss';

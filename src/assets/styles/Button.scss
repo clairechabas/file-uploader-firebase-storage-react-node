@@ -1,0 +1,24 @@
+.btn {
+  background-color: #584fec;
+  color: #fff;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btn:hover,
+.btn:active {
+  background-color: rgba(#584fec, 0.6);
+}
+.btn:disabled {
+  background-color: rgba(#797f8c, 0.4);
+  cursor: not-allowed;
+}
+.btn:disabled:hover {
+  background-color: rgba(#797f8c, 0.4);
+}
