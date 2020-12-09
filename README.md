@@ -4,7 +4,7 @@
 
 # File Uploader With Firebase Cloud Storage, ReactJS, NodeJS
 
-### Full Step-By-Step Guide: [Read the Medium post](https://medium.com/post-url)
+### Full Step-By-Step Guide: [Read the Medium post](https://medium.com/better-programming/how-to-upload-files-to-firebase-cloud-storage-with-react-and-node-js-e87d80aeded1)
 
 ![File Uploader ReactJS + NodeJS + Firebase](/public/file-uploader-react-node-firebase-screenshot.png)
 
